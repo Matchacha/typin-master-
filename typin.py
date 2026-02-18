@@ -26,3 +26,7 @@ def typing_game():
     total_words = len(words)
     mistakes = 0
     
+    print("/n Juego de rapidez en escritura lol")
+    print("escribe rapidamente la palabra que te aparece abajito ahi")
+for i, word in enumerate(words, start=1): ## i es el índice, word es la palabra
+    print("Palabra {}/{}: {}".format(i, total_words, word)) # Muestra progreso y palabra actual
