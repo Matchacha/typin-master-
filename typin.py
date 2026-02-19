@@ -30,3 +30,10 @@ def typing_game():
     print("escribe rapidamente la palabra que te aparece abajito ahi")
 for i, word in enumerate(words, start=1): ## i es el índice, word es la palabra
     print("Palabra {}/{}: {}".format(i, total_words, word)) # Muestra progreso y palabra actual
+    user_input = input("escrbe la palabra: ") 
+    if user_input.strip().lower() == word.lower()
+        print("Correcto\n")
+    else:
+
+
+
