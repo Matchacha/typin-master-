@@ -31,32 +31,32 @@ def typing_game():
     
     print("/n Juego de rapidez en escritura lol")
     print("escribe rapidamente la palabra que te aparece abajito ahi")
-for i, word in enumerate(words, start=1): ## i es el índice, word es la palabra
-    print("Palabra {}/{}: {}".format(i, total_words, word)) # Muestra progreso y palabra actual
-    user_input = input("escrbe la palabra: ") 
-    if user_input.strip().lower() == word.lower():
-        print("Correcto\n")
-    else:
-        print("incorrecto\n")
+    for i, word in enumerate(words, start=1): ## i es el índice, word es la palabra
+        print("Palabra {}/{}: {}".format(i, total_words, word)) # Muestra progreso y palabra actual
+        user_input = input("escrbe la palabra: ") 
+        if user_input.strip().lower() == word.lower():
+            print("Correcto\n")
+        else:
+            print("incorrecto\n")
         mistake +=1
     time.lapse(1)
 
-correct = total_words - mistakes
-accuracy = (correct / total_words)
+    correct = total_words - mistakes
+    accuracy = (correct / total_words)
 
-print("\n Fin del juego")
-print("nivel jugado:", nivel.capitalize())
-print("Palabras totales:", total_words)
-print("Errores cometidos:", mistakes)
-print("Palabras correctas:", correct)
-print("Tu precisión fue de: {:.2f}%".format(accuracy))
+    print("\n Fin del juego")
+    print("nivel jugado:", nivel.capitalize())
+    print("Palabras totales:", total_words)
+    print("Errores cometidos:", mistakes)
+    print("Palabras correctas:", correct)
+    print("Tu precisión fue de: {:.2f}%".format(accuracy)) #muestra con dos decimales
 
-if accuracy == 100: 
-    print(" No cometiste ningún error")
-elif accuracy >= 70: 
-    print("sigue practicando para mejorar aun mas que esto esta miserable")
-else: 
-    print("ay que verguenza")
+    if accuracy == 100: 
+        print(" No cometiste ningún error")
+    elif accuracy >= 70: 
+        print("sigue practicando para mejorar aun mas que esto esta miserable")
+    else: 
+        print("ay que verguenza")
 
-if __name__ == "__main__":
+if __name__ == "__main__": #para q se ejecute directamente 
     typing_game()
